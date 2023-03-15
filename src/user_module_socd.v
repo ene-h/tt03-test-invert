@@ -10,3 +10,5 @@ module socd(
 	always @(left||right)
 		left_C = (left&&right) ? 0 : left;
 		right_C = (left&&right) ? 0 : right;
+	
+endmodule
