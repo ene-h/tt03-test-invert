@@ -1,8 +1,10 @@
 module socd(
-	input up, input down, input left, input right,
-	output up_C, output down_C, output left_C, output right_C
+	input [7:0] io_in,
+  	output [7:0] io_out
 );
 	
+	wire up=io_in[0];
+	//>.....
   //always @(up or down)
   assign up_C = up;
   assign	down_C = (up && down) ? 0 : down;
